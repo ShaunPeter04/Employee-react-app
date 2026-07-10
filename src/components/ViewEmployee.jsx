@@ -37,15 +37,18 @@ const ViewEmployee = () => {
 
                     {empdata.map(
 
-                        (value, index) => (
+                        (value, index) => {
 
-                            <tr key={value.empcode}>
-                                <td>{value.empcode}</td>
-                                <td>{value.name}</td>
-                                <td>{value.phone}</td>
-                                <td>{value.designation}</td>
-                            </tr>
-                        )
+                            return (
+
+                                <tr key={value.empcode}>
+                                    <td>{value.empcode}</td>
+                                    <td>{value.name}</td>
+                                    <td>{value.phone}</td>
+                                    <td>{value.designation}</td>
+                                </tr>
+                            )
+                        }
 
 
                     )}
